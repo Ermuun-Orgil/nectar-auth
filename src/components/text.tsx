@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 
 type TextProps = {
     color: string
-    size: 'small' | 'medium' | 'large'
+    size: 'small' | 'medium' | 'large' | 'big'
     weight: 'strong' | 'bold' | 'normal'
     align: 'center' | 'left' | 'right'
     letterSpacing: string
@@ -10,14 +10,15 @@ type TextProps = {
 
 const MappingToFontWeight = {
     strong: '900',
-    bold: '700',
+    bold: '600',
     normal: '400',
 }
 
 const MappingToFontSize = {
     small: '12px',
     medium: '16px',
-    large: '30px'
+    large: '30px',
+    big: '48px',
 }
 
 export const Text = styled.Text<TextProps>`

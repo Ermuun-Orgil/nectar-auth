@@ -1,8 +1,16 @@
 import styled from 'styled-components/native';
 
-export const Button = styled.TouchableOpacity`
-    width: 45.67px;
-    height: 45.67px;
+type ButtonProps = {
+    color: string
+    height: number | string
+    width: number | string
+    align: 
+    letterSpacing: string
+}
+
+export const Button = styled.TouchableOpacity<TextProps>`
+    width: ${props => props.width};
+    height: ${props => props.height};
     background: #53B175;
     border-radius: 17px;
 `

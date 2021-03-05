@@ -17,14 +17,26 @@ const Box3 = styled(FlexBox)`
 
 export const OnboardingScreen = () => {
     return (
-        <Background flex={1} color={"white"}>
-            <Box1 flex={1}></Box1>
-            <Box2 flex={2}></Box2>
-            <Box width={"200px"} height={"50px"}></Box>
-            <Box3 flex={3} flexDirection={"row"}>
-                <Box1 flex={3}></Box1>
-                <Box2 flex={2}></Box2>
-            </Box3>
+        <Background flex={1} color={"violet"}>
+            <FlexBox flex={1}></FlexBox>
+            <FlexBox flex={1}>
+                <FlexBox flex={1}>
+                    <MainIcon width={48} height={56}></MainIcon>
+                </FlexBox>
+                <FlexBox flex={1}>
+                    <Text color={"white"} size={"big"} weight={"bold"} letterSpacing={"1"} align={"center"}>
+                        Welcome to our store
+                    </Text>
+                </FlexBox>
+                <FlexBox flex={1}>
+                    <Text color={"white"} size={"medium"} weight={"normal"} letterSpacing={"1"} align={"center"}>
+                        Get your groceries in as fast as one hour
+                    </Text>
+                </FlexBox>
+                <FlexBox flex={1}>
+                    <Button></Button>
+                </FlexBox>
+            </FlexBox>
         </Background>
     );
 };
