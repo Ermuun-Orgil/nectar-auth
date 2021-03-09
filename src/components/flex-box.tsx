@@ -5,8 +5,8 @@ type FlexBoxType = {
     height?: string | number
     width?: string | number
     flexDirection?: string
-    justifyContent?: string
-    alignItems?: string
+    justifyContent?: 'center' | 'flex-start' | 'flex-end' | 'space-around' | 'space-between'
+    alignItems?: 'center' | 'flex-start' | 'flex-end'
 }
 
 export const FlexBox = styled.View<FlexBoxType>`

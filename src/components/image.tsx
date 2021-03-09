@@ -1,7 +1,6 @@
 import styled from 'styled-components/native';
 
 type ImageType = {
-    color: string
     flex: number
     width: string
     height: string
@@ -9,6 +8,7 @@ type ImageType = {
 }
 
 export const Image = styled.Image<ImageType>`
+    flex: ${props => props.flex}
     width: ${props => props.width ? props.width : "100%"};
     height: ${props => props.height ? props.height : "100%"};
     border-radius: ${props => props.border ? "18px" : "0"};

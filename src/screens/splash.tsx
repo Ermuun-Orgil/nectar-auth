@@ -26,7 +26,7 @@ export const SplashScreen = () => {
                     <Gap />
                     <FlexBox flex={1} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"}>
                         <NectarIcon height={50} width={200} />
-                        <Text color={"white"} size={"medium"} letterSpacing={"5.5px"} >online groceriet</Text>
+                        <Text color={"white"} size={"5.5px"} letterSpacing={"5.5px"} >online groceriet</Text>
                     </FlexBox>
                 </Box>
             </FlexBox>

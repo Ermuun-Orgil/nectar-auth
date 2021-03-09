@@ -2,11 +2,8 @@ import React from 'react';
 import { SafeAreaView, StatusBar } from 'react-native';
 import styled from 'styled-components/native';
 import { Background, FlexBox, Box, MainIcon, NectarIcon, Text, Image, Button } from '../components';
-import { useNavigation } from '@react-navigation/native'
 
-const navigation = useNavigation();
-
-export const OnboardingScreen = () => {
+export const SignIn = () => {
     return (
         // <Image flex={1} source={require("../assets/man.png")}>
         <Background color={"black"} flex={1}>
@@ -23,7 +20,7 @@ export const OnboardingScreen = () => {
                     Get your groceries in as fast as one hour
                 </Text>
                 <Box height={"41px"}></Box>
-                <Button width={353} height={67} onPress={navigation.navigate('SignIn')}>
+                <Button width={353} height={67}>
                     <FlexBox flex={1} alignItems={"center"} justifyContent={"center"}>
                         <Text size={"18px"} align={"center"} weight={"bold"} color={"#FFF9FF"}>Get Started</Text>
                     </FlexBox>
